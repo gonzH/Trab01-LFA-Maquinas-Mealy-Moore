@@ -85,10 +85,10 @@ São consideradas válidas entradas de máquinas de <i>Mealy</i> e <i>Moore</i> 
 (mealy
 ( symbols-in a b)
 ( symbols-out 0 1)
-( s t a t e s q0 q1 q2 q3 )
-( s t a r t q0 )
-( f i n a l s q3 )
-( t r ans
+( states q0 q1 q2 q3 )
+( start q0 )
+( finals q3 )
+( trans
 ( q0 q1 a 0) ( q0 q3 b 0) ( q1 q2 b 1) ( q1 q3 a 1)
 ( q2 q3 a 0) ( q2 q3 b 1) ( q3 q0 b 1) ( q3 q3 a 1 ) ) )
 ```
@@ -97,10 +97,10 @@ São consideradas válidas entradas de máquinas de <i>Mealy</i> e <i>Moore</i> 
 (moore
 ( symbols-in a b)
 ( symbols-out 0 1)
-( s t a t e s q0 q0 ' q1 q2 q3 q3 ' )
-( s t a r t q0 )
-( f i n a l s q3 q3 ' )
-( t r ans
+( states q0 q0 ' q1 q2 q3 q3 ' )
+( start q0 )
+( finals q3 q3 ' )
+( trans
 ( q0 q1 a ) ( q0 q3 b) ( q1 q3 ' a ) ( q1 q2 b)
 ( q2 q0 ' a ) ( q2 q3 ' b) ( q3 q3 ' a ) ( q3 q0 ' b)
 ( q3 ' q3 ' a ) ( q3 ' q0 ' b ) )
