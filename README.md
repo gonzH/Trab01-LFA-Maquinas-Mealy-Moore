@@ -74,7 +74,7 @@ python3 main.py -i arquivoEntrada.txt -o arquivoSaida.txt
 ```
 >ATENÇÃO: O código rejeita qualquer comando de entrada com a quantidade de argumentos diferente de 5
 
-<br><br>
+<br>
 
 ### Informações adicionais
 São consideradas válidas entradas de máquinas de <i>Mealy</i> e <i>Moore</i> as entradas seguindo as respectivas estruturas em
