@@ -1,12 +1,12 @@
 # Autômatos Finitos com Saída<br>Máquinas de Mealy e de Moore
 Este trabalho foi desenvolvido para a disciplina de Linguagens Formais e Autômatos, do Instituto Federal do Espírito Santo - IFES lecionada pelo Prof. Doutor Jefferson Oliveira Andrade como forma de requisito de avaliação.
-
+<br><br>
 ### Autores
 Hellesandro Gonzaga de Carvalho: [gonzH](https://github.com/gonzH)<br>
 Luiz Antônio Roque Guzzo: [LuizGuzzo](https://github.com/LuizGuzzo)<br>
 
 Vale lembrar que o código do arquivo 'sexp.py' que será visto adiante foi retirado do site [RosettaCode](http://rosettacode.org/wiki/S-Expressions#Python), onde não encontramos autor para creditar.
-
+<br><br>
 ### Breve descrição do código fonte
 O trabalho foi desenvolvido na linguagem Python dada experiência dos autores em manipulação de string.<br>
 A organização do código foi pensada para ser simples de interpretar a execução do código, são basicamente 3 (três) arquivos:<br>
@@ -63,7 +63,7 @@ Dada a entrada dos dados, a seguinte sequência é esperada:<br><br>
 * Moore: <br>
 `reading_file(nameFile)` -> `moore_machine(sexpList)` -> `check_conditions(machine_in)` -> `moore_to_mealy(machine_in)` -> `write_machine(machine_out, nameFile)`<br>
 * Mealy: <br>
-`reading_file(nameFile)` -> `mealy_machine(sexpList)` -> `check_conditions(machine_in)` -> `mealy_to_moore(machine_in)` -> `write_machine(machine_out, nameFile)`<br>
+`reading_file(nameFile)` -> `mealy_machine(sexpList)` -> `check_conditions(machine_in)` -> `mealy_to_moore(machine_in)` -> `write_machine(machine_out, nameFile)`<br><br>
 
 ### Nome e Modo de uso do programa
 Os nomes já foram introduzidos na seção de descrição do código fonte.<br>
@@ -73,6 +73,8 @@ Tendo todos os arquivos na pasta, informe o caminho para o terminal e execute o 
 python3 main.py -i arquivoEntrada.txt -o arquivoSaida.txt
 ```
 >ATENÇÃO: O código rejeita qualquer comando de entrada com a quantidade de argumentos diferente de 5
+
+<br><br>
 
 ### Informações adicionais
 São consideradas válidas entradas de máquinas de <i>Mealy</i> e <i>Moore</i> as entradas seguindo as respectivas estruturas em
@@ -91,6 +93,7 @@ São consideradas válidas entradas de máquinas de <i>Mealy</i> e <i>Moore</i> 
 ( q2 q3 a 0) ( q2 q3 b 1) ( q3 q0 b 1) ( q3 q3 a 1 ) ) )
 ```
 * Moore: <br>
+```
 (moore
 ( symbols-in a b)
 ( symbols-out 0 1)
@@ -104,3 +107,4 @@ São consideradas válidas entradas de máquinas de <i>Mealy</i> e <i>Moore</i> 
 ( out-fn
 ( q0 ( ) ) ( q0 ' 1) ( q1 0)
 ( q2 1) ( q3 0) ( q3 ' 1 ) ) )
+```
